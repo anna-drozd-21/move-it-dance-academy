@@ -1,0 +1,81 @@
+body{
+	background:white;
+	color:;
+	font-family: ;
+}
+ul{
+    padding: 20px;
+}
+a{
+    color:#ffffff !important;
+    text-decoration:none;
+    
+}
+.container-top div{
+	display:flex;
+	flex-direction:row;
+	justify-content:center;
+	align-items:center;
+	height:100px;
+	width:100%;
+}	
+.container-top{	
+	padding-top:25px;
+	padding-bottom:25px;
+	padding-left:20px;
+	padding-right:20px;
+	width:100%;
+	height:100px;
+	background:beige;
+	color:black;
+}
+#top-header{
+	font-family:;
+	color:black;
+	text-shadow:2px 2px #F1948A;
+}
+#left-side-bar{
+	text-shadow:2px;
+	display:flex;
+	flex-direction:row;
+	justify-content:center;
+	align-items:center;
+	background: beige;
+}
+#right-side-bar{
+	text-shadow:2px;
+	display:flex;
+	flex-direction:row;
+	justify-content:center;
+	align-items:center;
+	background:beige;
+}
+.header-main-text{
+	text-align:center;
+	text-shadow:5px;
+	
+}
+#logo-nav-bar{
+	align-items:left;
+	justify-content:left;
+	height:5px;
+	width:5px;
+}
+/*
+footer styling source: bootstrap-5.1.3-examples package.
+https://getbootstrap.com/docs/5.1/examples/#snippets
+Authors: Mark Otto, Jacob Thornton, and Bootstrap contributors.
+*/
+.b-example-divider {
+  height: 3rem;
+  background-color: rgba(0, 0, 0, .1);
+  border: solid rgba(0, 0, 0, .15);
+  border-width: 1px 0;
+  box-shadow: inset 0 .5em 1.5em rgba(0, 0, 0, .1), inset 0 .125em .5em rgba(0, 0, 0, .15);
+}
+.bi {
+  vertical-align: -.125em;
+  fill: currentColor;
+}
+
+
