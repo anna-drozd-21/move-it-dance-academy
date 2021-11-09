@@ -17,7 +17,6 @@ const today = new Date();
 let pickedMonth = today.getMonth();
 let currentYear = today.getFullYear();
 // gets the day of the week of previous month
-console.log(today.getFullYear());
 let lastmonthdate = new Date(currentYear, pickedMonth, 0);
 let endOfLastMonth = lastmonthdate.getDay();
 printyear(endOfLastMonth);
@@ -181,7 +180,6 @@ nextMonth.addEventListener("click", (e) => {
     if(pickedMonth == 0){
         currentYear++;
     }
-    console.log(currentYear);
     lastmonthdate = new Date(currentYear, pickedMonth, 0);
     endOfLastMonth = lastmonthdate.getDay();
 
@@ -208,8 +206,8 @@ const popupBox = document.getElementById("popup");
 
 calendarContainer.addEventListener("click", (e) => {
    
+    //allows user to only book from todays date onwards not back.
     if(e.target.className == "dayOfTheWeek"){
-        console.log(parseInt(e.target.innerHTML), "today", today.getDate())
         if(today.getMonth() < pickedMonth){
             bluredContent.classList.toggle('active');
             popupBox.classList.toggle('active');
