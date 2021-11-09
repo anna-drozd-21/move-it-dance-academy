@@ -28,22 +28,26 @@
         </header>
         
         <!-- Calendar -->
-        <div class="container"  id="blur" >
-            <div class="wholecallendar col-11">
+        <div class="CallendarContainer"  id="blur" >
+            <div class="wholecallendar col-11-sm">
                 <div id="addmonth">
-                  <p id="previousMonth"> < </p>
+                  <h1 id="previousMonth"> <svg xmlns="http://www.w3.org/2000/svg" width="25" height="25" fill="currentColor" class="bi bi-caret-left" viewBox="0 0 16 16">
+                    <path d="M10 12.796V3.204L4.519 8 10 12.796zm-.659.753-5.48-4.796a1 1 0 0 1 0-1.506l5.48-4.796A1 1 0 0 1 11 3.204v9.592a1 1 0 0 1-1.659.753z"/>
+                  </svg> </h1>
                   <div id="nameHolder"></div>
-                  <p id="nextMonth"> > </p>
+                  <h1 id="nextMonth"><svg xmlns="http://www.w3.org/2000/svg" width="25" height="25" fill="currentColor" class="bi bi-caret-right" viewBox="0 0 16 16">
+                    <path d="M6 12.796V3.204L11.481 8 6 12.796zm.659.753 5.48-4.796a1 1 0 0 0 0-1.506L6.66 2.451C6.011 1.885 5 2.345 5 3.204v9.592a1 1 0 0 0 1.659.753z"/>
+                  </svg> </h1>
                 </div>
                 <div class="cal-container ">
                     <div id="calendar" >
-                        <div id="sun" class="weekDay">Sunday</div>
-                        <div id="mon" class="weekDay">Monday</div>
-                        <div id="tue" class="weekDay">Tuesday</div>
-                        <div id="wen" class="weekDay">Wensday</div>
-                        <div id="thu" class="weekDay">Thursday</div>
-                        <div id="fri" class="weekDay">Friday</div>
-                        <div id="sat" class="weekDay">Saturday</div>
+                        <div id="sun" class="weekDay">Sun</div>
+                        <div id="mon" class="weekDay">Mon</div>
+                        <div id="tue" class="weekDay">Tue</div>
+                        <div id="wen" class="weekDay">Wed</div>
+                        <div id="thu" class="weekDay">Thu</div>
+                        <div id="fri" class="weekDay">Fri</div>
+                        <div id="sat" class="weekDay">Sat</div>
                     </div>
                 </div>
             </div>
@@ -53,7 +57,14 @@
         <div class="container" id="popup">
           <div class="content">
             <form>
-              <h1> Sign Me Up !</h1>
+              <div class="popUpHeading">
+                <h1> Sign Me Up !</h1>
+                <h1 id="close"><svg xmlns="http://www.w3.org/2000/svg" width="25" height="25" fill="currentColor" class="bi bi-x-lg" viewBox="0 0 16 16">
+                  <path fill-rule="evenodd" d="M13.854 2.146a.5.5 0 0 1 0 .708l-11 11a.5.5 0 0 1-.708-.708l11-11a.5.5 0 0 1 .708 0Z"/>
+                  <path fill-rule="evenodd" d="M2.146 2.146a.5.5 0 0 0 0 .708l11 11a.5.5 0 0 0 .708-.708l-11-11a.5.5 0 0 0-.708 0Z"/>
+                </svg></h1>
+              </div>
+              
               <br>
               <div class="form-group row">
                 <label for="inputEmail3" class="col-sm-2 col-form-label">Email:</label>
@@ -108,9 +119,6 @@
               <div class="form-group row">
                 <div class="col-sm">
                   <button type="submit" class="btn btn-primary">Sign up!</button>
-                </div>
-                <div class="col-sm-1">
-                  <button type="button" id="close" class="btn btn-primary">Close</button>
                 </div>
               </div>
             </form>

@@ -131,10 +131,9 @@ function addElement(dayoftheweek, number){
         currentDiv.appendChild(newDiv); 
     }
      
+    // adds different colour to todays day 
     if(pickedMonth == today.getMonth()&& number == today.getDate()){
-        let days = document.getElementsByClassName("dayOfTheWeek");
-        console.log()
-        days[number].style.backgroundColor = "gray";
+        newDiv.style.backgroundColor= "gray";
     }
 
 }
@@ -209,12 +208,13 @@ const popupBox = document.getElementById("popup");
 
 calendarContainer.addEventListener("click", (e) => {
    
-    if(e.target.className == "dayOfTheWeek" && parseInt(e.target.innerHTML) ){
+    if(e.target.className == "dayOfTheWeek"){
+        console.log(parseInt(e.target.innerHTML), "today", today.getDate())
         if(today.getMonth() < pickedMonth){
             bluredContent.classList.toggle('active');
             popupBox.classList.toggle('active');
         }
-        else if(today.getMonth() == pickedMonth && today.getDay() <= parseInt(e.target.innerHTML)){
+        else if(today.getMonth() == pickedMonth && today.getDate() <= parseInt(e.target.innerHTML)){
             bluredContent.classList.toggle('active');
             popupBox.classList.toggle('active');
         }

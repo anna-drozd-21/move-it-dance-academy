@@ -8,7 +8,7 @@ a{
     /*font ??*/
 }
 
-.container{
+.CallendarContainer{
     padding-top: 150px;
 }
 
@@ -74,4 +74,42 @@ a{
     visibility: visible;   
     top: 50%;
 
+}
+.popUpHeading{
+    display: flex;
+    justify-content: space-between;
+}
+.popUpHeading>*{
+    display: inline;
+}
+
+/* small screen sizes */ 
+@media (max-width:769px)  { 
+
+    .weekDay{
+        padding: 0;
+    }
+    .weekDay>div{
+        padding: 25px;
+    }
+    .wholecallendar {
+        width: 100%;
+    }
+}
+
+@media (max-width:570px) { 
+
+    .weekDay>div{
+        padding: 0;
+        padding-bottom: 20px;
+        padding-top: 20px;
+    }
+
+}
+
+@media (max-width:411px) { 
+
+    #previousMonth, #nextMonth, #currentMonthName{
+        padding: 0;
+    }
 }
