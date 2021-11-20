@@ -17,7 +17,6 @@ const today = new Date();
 let pickedMonth = today.getMonth();
 let currentYear = today.getFullYear();
 // gets the day of the week of previous month
-console.log(today.getFullYear());
 let lastmonthdate = new Date(currentYear, pickedMonth, 0);
 let endOfLastMonth = lastmonthdate.getDay();
 printyear(endOfLastMonth);
@@ -131,10 +130,9 @@ function addElement(dayoftheweek, number){
         currentDiv.appendChild(newDiv); 
     }
      
+    // adds different colour to todays day 
     if(pickedMonth == today.getMonth()&& number == today.getDate()){
-        let days = document.getElementsByClassName("dayOfTheWeek");
-        console.log()
-        days[number].style.backgroundColor = "gray";
+        newDiv.style.backgroundColor= "gray";
     }
 
 }
@@ -182,7 +180,6 @@ nextMonth.addEventListener("click", (e) => {
     if(pickedMonth == 0){
         currentYear++;
     }
-    console.log(currentYear);
     lastmonthdate = new Date(currentYear, pickedMonth, 0);
     endOfLastMonth = lastmonthdate.getDay();
 
@@ -209,12 +206,13 @@ const popupBox = document.getElementById("popup");
 
 calendarContainer.addEventListener("click", (e) => {
    
-    if(e.target.className == "dayOfTheWeek" && parseInt(e.target.innerHTML) ){
+    //allows user to only book from todays date onwards not back.
+    if(e.target.className == "dayOfTheWeek"){
         if(today.getMonth() < pickedMonth){
             bluredContent.classList.toggle('active');
             popupBox.classList.toggle('active');
         }
-        else if(today.getMonth() == pickedMonth && today.getDay() <= parseInt(e.target.innerHTML)){
+        else if(today.getMonth() == pickedMonth && today.getDate() <= parseInt(e.target.innerHTML)){
             bluredContent.classList.toggle('active');
             popupBox.classList.toggle('active');
         }
