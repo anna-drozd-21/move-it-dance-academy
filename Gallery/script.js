@@ -7,6 +7,7 @@ let counter = 0;
 
 // change of video and caption under
 rightArrow.addEventListener("click", (e) => {
+    console.log(counter)
     if(counter >= 3){
         counter=0;
         
@@ -26,7 +27,6 @@ rightArrow.addEventListener("click", (e) => {
         caption[counter+1].classList.toggle("hide");
         counter++;
     }
-
 
 });
 
@@ -53,8 +53,6 @@ leftArrow.addEventListener("click", (e) => {
         counter--;
     }
     
-
-
-
 });
+
 

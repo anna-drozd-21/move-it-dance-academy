@@ -11,6 +11,8 @@ a{
 
 /* -- Content -- */ 
 
+/* -- Video Carusel -- */ 
+
 #carouselContainer{
     margin-top: 100px;
 }
@@ -39,4 +41,35 @@ a{
     position: relative;
     color: black;
     top: 20px;
+    margin-left: 20px;
+    padding-bottom: 30px;
+    box-shadow: rgba(0, 0, 0, 0.45) 0px 25px 20px -20px;
+}
+    /* -- Photo Gallery -- */ 
+#galleryContainer{
+    margin-top: 35px;
+    padding-top: 35px;
+    background-color: rgb(255, 255, 255);
+}
+.gallery {
+	display: flex;
+	padding: 2px;
+	transition: .3s;
+}
+
+.gallery_colmn {
+    display: flex;
+    flex-direction: column;
+    width: 25%;
+}
+
+#column1 > img,
+#column2 > img,
+#column3 > img,
+#column4 > img{
+    border: 5px rgb(255, 255, 255) solid;
+}
+
+img:not(*:hover){
+    filter: grayscale(1);
 }
