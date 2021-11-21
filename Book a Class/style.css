@@ -1,5 +1,24 @@
+/* -- Header -- */
+.home{
+    color: rgb(255, 255, 255);
+    /*position: absolute;*/
+    padding-left: 25px;
+}
+
+.name{
+    font-family: 'Lobster', cursive;
+    margin-bottom: 0;
+    margin-top: 7px;
+}
+
+.underName{
+    font-family: 'Satisfy', cursive;
+    padding-left: 25px;
+    margin: 0;
+}
+
 ul{
-    padding: 20px;
+    padding: 20px 0 0 0;
 }
 
 a{
@@ -7,7 +26,6 @@ a{
     text-decoration:none;
     /*font ??*/
 }
-
 .CallendarContainer{
     padding-top: 150px;
 }
@@ -50,11 +68,15 @@ a{
     padding: 40px
 }
 
-#blur.active{
+/* pop up box and blur under it */
+
+#blur.active,
+#blurFooter.active{
     filter: blur(20px);
     pointer-events: none;
     user-select: none;
 }
+
 
 #popup {
     position: fixed;
@@ -112,4 +134,8 @@ a{
     #previousMonth, #nextMonth, #currentMonthName{
         padding: 0;
     }
+}
+
+footer{
+    padding-top: 10rem !important;
 }

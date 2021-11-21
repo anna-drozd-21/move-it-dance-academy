@@ -203,6 +203,7 @@ const calendarContainer = document.getElementById("calendar");
 const bluredContent = document.getElementById("blur");
 const closeButton = document.getElementById("close");
 const popupBox = document.getElementById("popup");
+const blurFooter = document.getElementById("blurFooter");
 
 calendarContainer.addEventListener("click", (e) => {
    
@@ -211,10 +212,13 @@ calendarContainer.addEventListener("click", (e) => {
         if(today.getMonth() < pickedMonth){
             bluredContent.classList.toggle('active');
             popupBox.classList.toggle('active');
+            blurFooter.classList.toggle('active');
         }
         else if(today.getMonth() == pickedMonth && today.getDate() <= parseInt(e.target.innerHTML)){
             bluredContent.classList.toggle('active');
             popupBox.classList.toggle('active');
+            blurFooter.classList.toggle('active');
+
         }
 
     }
@@ -223,4 +227,6 @@ calendarContainer.addEventListener("click", (e) => {
 closeButton.addEventListener("click", () => {
     bluredContent.classList.toggle('active');
     popupBox.classList.toggle('active');
+    blurFooter.classList.toggle('active');
+
 })

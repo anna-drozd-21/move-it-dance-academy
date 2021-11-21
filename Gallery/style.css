@@ -1,6 +1,24 @@
 /* -- Header -- */
+.home{
+    color: rgb(255, 255, 255);
+    /*position: absolute;*/
+    padding-left: 25px;
+}
+
+.name{
+    font-family: 'Lobster', cursive;
+    margin-bottom: 0;
+    margin-top: 7px;
+}
+
+.underName{
+    font-family: 'Satisfy', cursive;
+    padding-left: 25px;
+    margin: 0;
+}
+
 ul{
-    padding: 20px;
+    padding: 20px 0 0 0;
 }
 
 a{
@@ -43,7 +61,7 @@ a{
     top: 20px;
     margin-left: 20px;
     padding-bottom: 30px;
-    box-shadow: rgba(0, 0, 0, 0.45) 0px 25px 20px -20px;
+    border-bottom: 2px solid rgb(201, 201, 201);
 }
     /* -- Photo Gallery -- */ 
 #galleryContainer{
