@@ -12,10 +12,19 @@ a{
     
 }
 
-#{
+.afterSubmission{
+	display:flex;
+	justify-content:center;
+	background:grey;
+	size:200%;
 }
-
-#{
+.changeBackground{
+	background:grey;
+	color:white;
+	font-size:150%;
+}
+#emptyDiv{
+	font-size:300%;
 }
 
 #logo-nav-bar{
