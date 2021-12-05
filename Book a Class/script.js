@@ -43,14 +43,14 @@ function printyear(endOfLastMonth){
     }
    
 }
-
+// creates divs for each day of the week
 function addElement(dayoftheweek, number){
     let newDiv = document.createElement("div");
     newDiv.classList.add('dayOfTheWeek');
     let newContent = document.createTextNode(number);
     newDiv.appendChild(newContent);
     
-    //adds dashes for numbers of previous month 
+    //adds dashes for numbers of previous month
     if(number == 1 && dayoftheweek != 0){
         for(let i = 0; i < dayoftheweek; i++){
             let newDiv = document.createElement("div");
@@ -151,7 +151,7 @@ previousMonth.addEventListener("click", (e) => {
     pickedMonth--;    
     pickedMonth = pickedMonth%12;
 
-    if(pickedMonth == 1){
+    if(pickedMonth == 1 || pickedMonth == 11){
         currentYear--;
     }
 
@@ -206,21 +206,35 @@ const popupBox = document.getElementById("popup");
 const blurFooter = document.getElementById("blurFooter");
 
 calendarContainer.addEventListener("click", (e) => {
-   
+
     //allows user to only book from todays date onwards not back.
     if(e.target.className == "dayOfTheWeek"){
-        if(today.getMonth() < pickedMonth){
+       
+        //if the picked day is this year and picked month is not a previous month (cant book backwards)
+        if (today.getFullYear() == currentYear && today.getMonth() < pickedMonth){
             bluredContent.classList.toggle('active');
             popupBox.classList.toggle('active');
             blurFooter.classList.toggle('active');
         }
+        //if selected dat is "-"
+        else if(e.target.innerHTML == "-"){
+        }
+        //if the picked day is next year 
+        else if(today.getFullYear() < currentYear){
+            bluredContent.classList.toggle('active');
+            popupBox.classList.toggle('active');
+            blurFooter.classList.toggle('active');
+        }
+        // if the picked day is this month and from today on (cant book backwards)
         else if(today.getMonth() == pickedMonth && today.getDate() <= parseInt(e.target.innerHTML)){
             bluredContent.classList.toggle('active');
             popupBox.classList.toggle('active');
             blurFooter.classList.toggle('active');
 
         }
-
+        else{
+            alert("You cannot book classes that already happened")
+        }
     }
 })
 
@@ -228,5 +242,42 @@ closeButton.addEventListener("click", () => {
     bluredContent.classList.toggle('active');
     popupBox.classList.toggle('active');
     blurFooter.classList.toggle('active');
+
+})
+
+
+// Form Validation 
+const contactEmail = document.getElementById("inputEmail");
+const contactName = document.getElementById("inputName");
+const contactClasses = document.getElementsByClassName("class");
+const contactSubscribe = document.getElementById("sub");
+const contactSubmit = document.getElementById("contactButton");
+const errorDisplay = document.getElementById("errorDisplay");
+let userClasse = "";
+
+contactSubmit.addEventListener('click', (e) => {
+    e.preventDefault();
+    userClasse ="";
+    errorDisplay.innerHTML =""
+    if(!contactEmail.value){
+        errorDisplay.innerHTML+= "Make sure You have entered an Emial Adress! <br>"
+    }
+
+    if(!contactName.value){
+        errorDisplay.innerHTML+= "Make sure You have entered Your Name!<br><br>"
+    }
+
+    for(i=0; i < contactClasses.length; i++){
+        console.log(contactClasses[i].nextElementSibling.innerHTML)
+        if(contactClasses[i].checked){
+            userClasse = (contactClasses[i].nextElementSibling.innerHTML).replace(/\s/g,'');
+        }
+        console.log(userClasse);
+    }
+
+    if(contactName.value && contactEmail.value){
+        alert("Thank You "+contactName.value+" for registering for "+userClasse)
+    }
+
 
 })
