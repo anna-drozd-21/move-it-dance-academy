@@ -278,4 +278,6 @@ contactSubmit.addEventListener('click', (e) => {
     if(contactName.value && contactEmail.value){
         alert("Thank You "+contactName.value+" for registering for "+userClasse)
     }
+
+
 })
