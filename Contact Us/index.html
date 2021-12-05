@@ -1,9 +1,8 @@
 <!-- 
-
 Web Design and Client Side Scripting
-----COLLABORATIVE PROJECT:---- 
+----GROUP PROJECT:---- 
 ----"Move IT! Dance Academy"--- 
-----"CONTACT US" page----
+----"Contact Us" page----
 -->
 
 <!DOCTYPE html>
@@ -20,74 +19,83 @@ Web Design and Client Side Scripting
 		<link href="https://fonts.googleapis.com/css2?family=Lobster&family=Satisfy&display=swap" rel="stylesheet">
 	</head>
 	<body>	
-		<!--NAVI BAR - HEADER-->
-        <header >        
-      <nav class="navbar navbar-dark bg-dark fixed-top">    
-        <div class="home ">
-          <h1 class="name">MoveIT</h1>
-          <h6 class="underName">Academy</h6>
-        </div>     
-        <ul class="d-flex flex-row-revers">
-			<li class="nav-item ">
-            <a class="nav-link" href="#">Home</a>
-          </li>
-          <li class="nav-item ">
-            <a class="nav-link" href="#">Booking</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="#">Gallery</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="#">Contact Us</a>
-          </li>
-        </ul>
-       </nav>
-    </header>
-		<!--CONTACT FORM -->
+		<!--NAVIGATION BAR(BOOTSTRAP) - HEADER-->
+        <header>        
+			<nav class="navbar navbar-dark bg-dark fixed-top">    
+				<div class="home ">
+					<h1 class="name">MoveIT</h1>
+					<h6 class="underName">Academy</h6>
+				</div>     
+				<ul class="d-flex flex-row-revers">
+					<li class="nav-item ">
+						<a class="nav-link" href="#">Home</a>
+					</li>
+					<li class="nav-item ">
+						<a class="nav-link" href="#">Booking</a>
+					</li>
+					<li class="nav-item">
+						<a class="nav-link" href="#">Gallery</a>
+					</li>
+					<li class="nav-item">
+						<a class="nav-link" href="#">Contact Us</a>
+					</li>
+				</ul>
+			</nav>
+		</header>
 		<br>
 		<br>
 		<br>
 		<br>
+		<!--CONTACT FORM (BOOTSTRAP)-->
 		<div class="container" id="main">
 			<div id="walk-ins"> </div>
 			<div class="row">
 				<div class="col-md-6" id="submission_form" name="academyForm">
+					<!--CONTACT FORM - HEADER-->
 					<h2 class="header_form">We would love to hear from you!</h2>
+					<!--NAME INPUT-->
 					<div class="mb-3">
 					<label for="exampleFormControlInput0" class="form-label">Name:</label>
 					<input class="form-control field_new" id="name" type="text" placeholder="" aria-label="default input example">
 					</div>
+					<!--*ERROR HANDLING -->
 					<div id="errorMessage1" class="error_style"> </div>
+					<!--EMAIL INPUT-->
 					<div class="mb-3">
 						<label for="exampleFormControlInput1" class="form-label">Email address:</label>
 						<input type="email" id="email" class="form-control field_new" id="exampleFormControlInput1" placeholder="">
 					</div>
+					<!--*ERROR HANDLING-->
 					<div id="errorMessage2" class="error_style"> </div>
+					<!--MESSAGE INPUT-->
 					<div class="mb-3">
 						<label for="exampleFormControlTextarea1" class="form-label">Message:</label>
 						<textarea class="form-control field_new" id="exampleFormControlTextarea1" type="text" rows="2"></textarea>
-					</div>	
+					</div>
+					<!--*ERROR HANDLING-->
 					<div id="errorMessage3" class="error_style"> </div>
+					<!--NOTIFICATIONS BOX-->	
 					<div class="form-check">
-						<input class="form-check-input" type="checkbox" value="text" id="flexCheckIndeterminate">
+						<input class="form-check-input" type="checkbox" class="checkbox_style" value="text" id="flexCheckIndeterminate">
 						<label class="form-check-label" for="flexCheckIndeterminate">
 						Tick this box if you wish to receive email notifications about our new dance classes! 
 						</label>
 					</div>
 					<br>
+					<!--SUBMIT BUTTON-->
 					<div>
 						<input class="btn btn-outline-dark btn-lg" id="button" type="submit" value="Send">
 					</div>
 					<br>
 					<br>
 				</div>
+				<!--LOCATION MAP (GOOGLE MAPS)-->
 				<div class="col-md-6" id="map" class="afterSubmission">	
 					<h2 class="header_location" id="location">Find us here:</h2>
 					<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d4299921.075310646!2d43.76732563170216!3d-20.341178419537385!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x21e6d260f6894d3b%3A0x64c4dc6bdd8a7682!2sIkana%2C%20Madagaskar!5e0!3m2!1spl!2sie!4v1636282660201!5m2!1spl!2sie" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
 				</div>
 			</div>
-		</div>
-				
+		</div>	
 		<!--
 		FOOTER source: bootstrap-5.1.3-examples package.
 		https://getbootstrap.com/docs/5.1/examples/#snippets

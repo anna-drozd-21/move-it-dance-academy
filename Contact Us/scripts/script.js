@@ -1,9 +1,10 @@
+//FORM VALIDATION
 const button=document.getElementById("button");
 button.addEventListener('click', submission); 
 
 function submission(){
 	
-	//vars	
+	//variables	
 	var visitorName=document.getElementById("name");
 	var visitorEmail=document.getElementById("email");
 	var visitorMessage=document.getElementById("exampleFormControlTextarea1");
@@ -34,7 +35,8 @@ function submission(){
 		
 		//setting the time out so that alert appears after the background change
 		setTimeout(() => {
-		alert("thank you for your details "+visitorName.value+", one of our team members will be in touch shortly!"); 
+		alert("Thank you for your details "+visitorName.value+
+		", one of our team members will be in touch shortly!"); 
 		}, 200)
 		return true;
 	}
