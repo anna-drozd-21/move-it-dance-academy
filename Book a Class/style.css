@@ -77,7 +77,7 @@ a{
     user-select: none;
 }
 
-
+/* Shadow for popup box taken from https://getcssscan.com/css-box-shadow-examples */
 #popup {
     position: fixed;
     top: 40%;
@@ -103,6 +103,10 @@ a{
 }
 .popUpHeading>*{
     display: inline;
+}
+
+#errorDisplay{
+    color: rgb(179, 41, 41);
 }
 
 /* small screen sizes */ 
