@@ -95,10 +95,27 @@ img:not(*:hover){
 }
 
 /* small screen sizes */ 
-@media (max-width:600px)  { 
+@media (max-width:600px) { 
 
     .homeTag{
-        visibility: hidden;
-        display: none;
+        /*visibility: hidden;*/
+        display: none !important;
+       
     }
+    .caption{
+        padding-left: 2px !important;
+    }
+    .flex-row-revers{
+        font-size: small;
+        padding-right: 10px;
+    }
+}
+/* very small screens */
+@media (max-width:350px) { 
+
+    .flex-row-revers{
+        padding-top: 20px !important;
+        font-size: x-small ;
+        padding: 6px ;
+    } 
 }
