@@ -1,5 +1,8 @@
-/* -- Header -- */
+body{
+    font-family: Arial, Helvetica, sans-serif;
+}
 
+/* -- Header -- */
 .home{
     color: rgb(255, 255, 255);
     padding-left: 25px;
