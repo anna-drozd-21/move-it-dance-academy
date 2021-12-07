@@ -1,3 +1,7 @@
+body{
+    font-family: Arial, Helvetica, sans-serif;
+}
+
 /* -- Header -- */
 .home{
     color: rgb(255, 255, 255);
@@ -22,7 +26,7 @@ ul{
 
 a{
     color:#ffffff !important;
-    text-decoration:none;
+    text-decoration:none !important;
 }
 
 /* -- Content -- */ 
@@ -88,4 +92,13 @@ a{
 
 img:not(*:hover){
     filter: grayscale(1);
+}
+
+/* small screen sizes */ 
+@media (max-width:600px)  { 
+
+    .homeTag{
+        visibility: hidden;
+        display: none;
+    }
 }

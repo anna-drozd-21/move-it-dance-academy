@@ -135,6 +135,10 @@ a{
         padding-bottom: 20px;
         padding-top: 20px;
     }
+    .homeTag{
+        visibility: hidden;
+        display: none;
+    }
 
 }
 
