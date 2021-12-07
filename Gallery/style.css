@@ -98,9 +98,7 @@ img:not(*:hover){
 @media (max-width:600px) { 
 
     .homeTag{
-        /*visibility: hidden;*/
         display: none !important;
-       
     }
     .caption{
         padding-left: 2px !important;
