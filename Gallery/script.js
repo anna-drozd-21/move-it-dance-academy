@@ -6,6 +6,8 @@ const caption = document.getElementsByClassName("caption")
 let counter = 0;
 
 // change of video and caption under
+
+//going right
 rightArrow.addEventListener("click", (e) => {
     console.log(counter)
     if(counter >= 3){
@@ -30,8 +32,8 @@ rightArrow.addEventListener("click", (e) => {
 
 });
 
+//going left
 leftArrow.addEventListener("click", (e) => {
-    console.log(counter)
     if(counter == 0){
         videos[counter].classList.toggle("hide");
         videos[3].classList.toggle("hide");
