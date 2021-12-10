@@ -9,7 +9,6 @@ let counter = 0;
 
 //going right
 rightArrow.addEventListener("click", (e) => {
-    console.log(counter)
     if(counter >= 3){
         counter=0;
         

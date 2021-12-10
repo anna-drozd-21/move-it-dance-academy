@@ -21,7 +21,7 @@ body{
 
 .underName{
     font-family: 'Satisfy', cursive;
-    padding-left: 25px;
+    padding-left: 19px;
     margin: 0;
 
 }
@@ -117,7 +117,7 @@ a{
     color: rgb(179, 41, 41);
 }
 
-/* small screen sizes */ 
+/* Boking Form and Callendar media queries*/
 @media (max-width:769px)  { 
 
     .weekDay{
@@ -139,18 +139,6 @@ a{
         padding-top: 20px;
     }
 
-    /*header*/
-    .homeTag{
-        display: none !important;
-    }
-    .caption{
-        padding-left: 2px !important;
-    }
-    .flex-row-revers{
-        font-size: small;
-        padding-right: 10px;
-    }
-
 }
 
 @media (max-width:411px) { 
@@ -160,17 +148,69 @@ a{
     }
 }
 
+@media (max-width:350px) { 
+
+    #popup{
+        padding-top: 110px;
+    }
+
+}
 footer{
     padding-top: 10rem !important;
 }
 
-
-/* very small screens */
-@media (max-width:350px) { 
+/* Header nav bar responsivnes */
+/* tablets */
+@media (max-width:1300px) { 
 
     .flex-row-revers{
-        padding-top: 20px !important;
-        font-size: x-small ;
-        padding: 6px ;
+        font-size: medium;
+        padding-right: 60px !important;
+    }
+    .fixed-top{
+        justify-content: space-evenly;
+    }
+}
+/* small screen sizes */ 
+@media (max-width:768px) { 
+
+    .homeTag{
+        display: none !important;
+    }
+    .caption{
+        padding-left: 2px !important;
+    }
+    .flex-row-revers{
+        font-size: small;
+        padding-right: 30px !important;
+    }
+    .fixed-top{
+        justify-content: space-evenly;
+    }
+}
+/* very small screens */
+@media (max-width:450px) { 
+
+    .flex-row-revers{
+        padding-top: 22px !important;
+        font-size: 9px ;
+        padding-right: 20px !important;
+        padding-left: 0;
     } 
+    .fixed-top{
+        justify-content: start;
+    }
+}
+
+@media (max-width:280px) { 
+
+    .flex-row-revers{
+        padding-top: 25px !important;
+        padding-right: 0px !important;
+        font-size: 7px;
+        padding-left: 0px !important;
+    } 
+    .fixed-top{
+        justify-content: start ;
+    }
 }

@@ -256,7 +256,7 @@ const errorDisplay = document.getElementById("errorDisplay");
 let userClasse = "";
 
 contactSubmit.addEventListener('click', (e) => {
-    e.preventDefault();
+    //e.preventDefault();
     userClasse ="";
     errorDisplay.innerHTML =""
     if(!contactEmail.value){

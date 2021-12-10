@@ -16,7 +16,7 @@ body{
 
 .underName{
     font-family: 'Satisfy', cursive;
-    padding-left: 25px;
+    padding-left: 19px;
     margin: 0;
 }
 
@@ -65,7 +65,8 @@ a{
     padding-bottom: 30px;
     border-bottom: 2px solid rgb(201, 201, 201);
 }
-    /* -- Photo Gallery -- */ 
+
+/* -- Photo Gallery -- */ 
 #galleryContainer{
     margin-top: 35px;
     padding-top: 35px;
@@ -93,9 +94,19 @@ a{
 img:not(*:hover){
     filter: grayscale(1);
 }
+/* tablets */
+@media (max-width:1300px) { 
 
+    .flex-row-revers{
+        font-size: medium;
+        padding-right: 60px !important;
+    }
+    .fixed-top{
+        justify-content: space-evenly;
+    }
+}
 /* small screen sizes */ 
-@media (max-width:600px) { 
+@media (max-width:768px) { 
 
     .homeTag{
         display: none !important;
@@ -105,15 +116,35 @@ img:not(*:hover){
     }
     .flex-row-revers{
         font-size: small;
-        padding-right: 10px;
+        padding-right: 30px !important;
+    }
+    .fixed-top{
+        justify-content: space-evenly;
     }
 }
 /* very small screens */
-@media (max-width:350px) { 
+@media (max-width:450px) { 
 
     .flex-row-revers{
-        padding-top: 20px !important;
-        font-size: x-small ;
-        padding: 6px ;
+        padding-top: 22px !important;
+        font-size: 9px ;
+        padding-right: 20px !important;
+        padding-left: 0;
     } 
+    .fixed-top{
+        justify-content: start;
+    }
+}
+
+@media (max-width:280px) { 
+
+    .flex-row-revers{
+        padding-top: 25px !important;
+        font-size: 7px ;
+        padding: 6px;
+        padding-left: 0;
+    } 
+    .fixed-top{
+        justify-content: start;
+    }
 }
