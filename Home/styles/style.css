@@ -81,7 +81,6 @@ a{
 }
 /* SALE BUTTON */
 #sales{
-	text-shadow:3px;
 	display:flex;
 	flex-direction:row;
 	justify-content:center;
