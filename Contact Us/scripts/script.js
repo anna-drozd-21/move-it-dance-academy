@@ -6,7 +6,7 @@ function submission(){
 	
 	//variables	
 	var visitorName=document.getElementById("name");
-	var visitorEmail=document.getElementById("email");
+	var visitorEmail=document.getElementById("exampleFormControlInput1");
 	var visitorMessage=document.getElementById("exampleFormControlTextarea1");
 	var errorMessage1=document.getElementById("errorMessage1");
 	var errorMessage2=document.getElementById("errorMessage2");
