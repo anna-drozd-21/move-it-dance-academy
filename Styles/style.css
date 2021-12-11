@@ -26,6 +26,10 @@ body{
     padding: 20px 0 0 0;
 }
 
+li{
+    list-style-type: none !important;
+}
+
 a{
     color:#ffffff !important;
     text-decoration:none !important;
@@ -98,37 +102,7 @@ img:not(*:hover){
 
 /* BOOKING */ 
 
-body{
-    font-family: Arial, Helvetica, sans-serif;
-}
-
 /* -- Header -- */
-.home{
-    color: rgb(255, 255, 255);
-    padding-left: 25px;
-}
-
-.home a {
-    text-decoration: none;
-}
-
-.name{
-    font-family: 'Lobster', cursive;
-    margin-bottom: 0;
-    margin-top: 7px;
-
-}
-
-.underName{
-    font-family: 'Satisfy', cursive;
-    padding-left: 19px;
-    margin: 0;
-
-}
-
-ul{
-    padding: 20px 0 0 0;
-}
 
 .ul_booking{
     color:#ffffff !important;

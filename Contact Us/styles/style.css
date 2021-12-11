@@ -61,15 +61,15 @@ a{
 #button:hover{
 	background:black;
 }
-/* MEDIA QUERY FOR MAP*/
+/* MEDIA QUERY FOR MAP */
 @media (max-width:375px) { 
 	#map{
-		display: flex;
-		flex-direction: column;
+		display:flex;
+		flex-direction:column;
 	}
 	
 	#map > iframe{
-		width: 90%;
+		width:90%;
 	}
 }
 /* AFTER SUBMISSION - MAP BEHAVIOUR */
