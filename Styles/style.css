@@ -1,4 +1,4 @@
-/* GALLERY */
+/* GALLERY - JOANNA SKOCZEN*/
 
 body{
     font-family: Arial, Helvetica, sans-serif;
@@ -100,7 +100,7 @@ img:not(*:hover){
     filter: grayscale(1);
 }
 
-/* BOOKING */ 
+/* BOOKING - JOANNA SKOCZEN*/ 
 
 /* -- Header -- */
 
@@ -295,3 +295,237 @@ footer{
         justify-content: start ;
     }
 }
+
+/* --- */
+/* HOME - ANNA DROZD */
+/* --- */
+
+#image{
+	background:url("../Home/images/rsz_alexandre-tsuchiya-ynviaxodwp8-unsplash.jpg");
+	max-width:100%;
+	height:auto;
+	background-size:cover;
+}
+.container-top div{
+	display:flex;
+	flex-direction:row;
+	justify-content:center;
+	align-items:center;
+	height:100px;
+	width:100%;
+}	
+.container-top{	
+	padding-top:25px;
+	padding-bottom:25px;
+	padding-left:20px;
+	padding-right:20px;
+	width:100%;
+	height:100px;
+	background:#202020; 
+	color:#303030;
+	filter: drop-shadow(7px 7px 8px grey);
+}
+#top-header{
+	font-family:'Lobster', cursive;
+	color:white;
+	text-shadow:0px 0px 5px black;
+}
+/* QUOTATION */
+.quotation{
+	padding-top:30px;
+	font-family:Times New Roman;
+	text-shadow: 1px 1px 2px grey;
+}
+.container-middle div{
+	display:flex;
+	flex-direction:row;
+	justify-content:center;
+	align-items:center;
+}
+.container-middle{
+	display:flex;
+	justify-content:center;
+	align-items:center;;
+}
+/* SALE BUTTON */
+#sales{
+	display:flex;
+	flex-direction:row;
+	justify-content:center;
+	align-items:center;		
+}
+.saleButtonStyle{
+	background:#484848;
+	filter:drop-shadow(7px 7px 8px grey);
+}
+#cut{
+	color:#D80000; 
+}
+/* SLIDESHOW */
+.main_carousel{
+	filter:drop-shadow(7px 7px 8px grey);
+	border-radius:10px;
+}
+.container-carousel div{
+	display:flex;
+	justify-content:center;
+}
+/* MAIN TEXT */
+.header-main-text{
+	display:flex;
+	text-align:center;
+	text-shadow:5px;
+	justify-content:center;
+	color:#FFDB58;
+	text-shadow: 3px 3px 4px black;
+}
+/* DANCE CLASSES - CARDS */
+.col{
+	display:flex;
+	justify-content:center;
+	margin:10px;
+}
+.dance_classes{
+	filter:drop-shadow(7px 7px 8px grey);
+	border-radius:15px;
+	border:3px solid white;
+	background:#E8E8E8;
+	justify-content:center;
+	margin-left:20px;
+}
+.dance_classes_img{
+	border-radius:15px;
+	border:3px solid white;	
+}
+/* PROFILE */
+.profile_button{
+	background-color:#E8E8E8;
+	color:#800000;
+	transition-duration:0.3s;
+	text-shadow:2px 2px black;
+	border:none;
+}
+.profile_button:hover{
+	background-color:#E8E8E8;
+	color:#808080;
+	font-size:130%;
+	border:none;
+}
+/* BOOK CLASS BUTTON */
+.book_class{
+	display:flex;
+	justify-content:center;
+	background-color:#FFDB58;
+	color:#FF0000;
+	font-size:110%;
+	text-shadow:2px 2px black;
+	border:none;
+	transition-duration:0.3s;
+}
+.book_class:hover{
+	background-color:#808080;
+	color:#FF0000;
+	font-size:120%;
+	text-shadow:2px 2px black;
+}
+/* REVIEWS SECTION */
+.reviews{
+	display:flex;
+	flex-direction:column;
+	justify-content:center;
+	text-shadow:2px;
+	width:30%;
+	height:auto;
+	filter: drop-shadow(7px 7px 8px grey);
+}
+.new_style{
+	background:grey;
+	color:white;
+}
+#reviews_bar_header{
+	color:white;
+	text-shadow: 2px 2px 4px black;
+}
+/* --- */
+/* CONTACT US - ANNA DROZD */
+/* --- */
+
+/* SUBMISSION FORM */
+.row{
+	display:flex;
+	justify-content:center;
+	align-content:center;
+}
+.header_form{
+	padding:10px 10px 10px 10px;
+	font-weight:bold;
+}
+.header_location{
+	font-weight:bold;
+	padding:10px 10px 10px 10px;
+}
+#walk-ins{
+	display:flex;
+	justify-content:center;
+	font-size:150%;
+	font-weight:bold;	
+}
+.field_new{
+	background:#F0E68C;
+}
+.error_style{
+	color:red;
+	font-weight:bold;
+}
+#button{
+	background:#F0E68C;
+}
+#button:hover{
+	background:black;
+}
+#map{
+	display:flex;
+	flex-direction:column;
+	padding-top:0px;
+}
+/* MEDIA QUERY FOR THE MAP */
+@media (max-width:375px){ 
+	#map{
+		display:flex;
+		flex-direction:column;
+	}
+	
+	#map > iframe{
+		width:90%;
+	}
+}
+/* AFTER SUBMISSION - MAP BEHAVIOUR */
+.afterSubmission{
+	display:flex;
+	font-size:130%;
+	padding:10px 10px 10px 10px;
+}
+.changeBackground{
+	background-size:cover;
+	max-width:100%;
+	height:auto;
+	color:black;
+}
+/*
+footer styling source: bootstrap-5.1.3-examples package.
+https://getbootstrap.com/docs/5.1/examples/#snippets
+Authors: Mark Otto, Jacob Thornton, and Bootstrap contributors.
+*/
+.b-example-divider {
+	height: 3rem;
+	background-color: rgba(0, 0, 0, .1);
+	border: solid rgba(0, 0, 0, .15);
+	border-width: 1px 0;
+	box-shadow: inset 0 .5em 1.5em rgba(0, 0, 0, .1), inset 0 .125em .5em rgba(0, 0, 0, .15);
+}
+.bi {
+	vertical-align: -.125em;
+	fill: currentColor;
+}
+
+
