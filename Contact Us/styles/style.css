@@ -24,7 +24,6 @@ ul{
 a{
     color:#ffffff !important;
     text-decoration:none;
-    /*font ??*/
 }
 /* SUBMISSION FORM */
 .row{
@@ -62,6 +61,17 @@ a{
 #button:hover{
 	background:black;
 }
+/* MEDIA QUERY FOR MAP */
+@media (max-width:375px) { 
+	#map{
+		display:flex;
+		flex-direction:column;
+	}
+	
+	#map > iframe{
+		width:90%;
+	}
+}
 /* AFTER SUBMISSION - MAP BEHAVIOUR */
 .afterSubmission{
 	display:flex;
@@ -69,8 +79,6 @@ a{
 	padding:20px 10px 10px 20px;
 }
 .changeBackground{
-	background-image:url("/images/rsz_alexandre-tsuchiya-ynviaxodwp8-unsplash.jpg");
-	background-color: aqua;
 	background-size:cover;
 	max-width:100%;
 	height:auto;

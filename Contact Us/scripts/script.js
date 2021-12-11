@@ -16,10 +16,10 @@ function submission(){
 	
 	//user input validation
 	if (!visitorName.value){
-		errorMessage1.innerHTML+="Name in invalid format, please try again!";	
+		errorMessage1.innerHTML="Name in invalid format, please try again!";	
 	}
 	else if (!visitorEmail.value){
-		errorMessage2.innerHTML+="Email in invalid format, please try again!";
+		errorMessage2.innerHTML="Email in invalid format, please try again!";
 	}
 	else if (!visitorMessage.value){
 		errorMessage3.innerHTML="You have to type in something!";
