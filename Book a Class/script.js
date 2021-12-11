@@ -233,7 +233,8 @@ calendarContainer.addEventListener("click", (e) => {
 
         }
         else{
-            alert("You cannot book classes that already happened")
+            let message = "You cannot book classes that already happened";
+            alertFunc(e, message);
         }
     }
 })
@@ -250,7 +251,7 @@ closeButton.addEventListener("click", () => {
 const contactEmail = document.getElementById("inputEmail");
 const contactName = document.getElementById("inputName");
 const contactClasses = document.getElementsByClassName("class");
-const contactSubscribe = document.getElementById("sub");
+const contactSubscribe = document.getElementById("gridCheck1");
 const contactSubmit = document.getElementById("contactButton");
 const errorDisplay = document.getElementById("errorDisplay");
 let userClasse = "";
@@ -276,8 +277,30 @@ contactSubmit.addEventListener('click', (e) => {
     }
 
     if(contactName.value && contactEmail.value){
-        alert("Thank You "+contactName.value+" for registering for "+userClasse)
+        let message = "Thank You "+contactName.value+" for registering for "+userClasse;
+        alertFunc(e, message);
+    
     }
-
-
 })
+
+//Reusable Function for alert Messages
+
+function alertFunc(e, message){
+    e.preventDefault();
+    $('#dialog').dialog({
+        title: "Alert!",
+        resizable: false,
+        modal: true,
+        open: function() {
+            let markup = message;
+            $(this).html(markup);
+          },
+    });
+};
+
+/*$(document).ready(function(){
+   $('#dialog').dialog();
+    
+});*/
+
+
