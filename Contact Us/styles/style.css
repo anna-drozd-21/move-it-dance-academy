@@ -52,17 +52,19 @@ a{
 	color:red;
 	font-weight:bold;
 }
-.checkbox_style{
-	
-}
 #button{
 	background:#F0E68C;
 }
 #button:hover{
 	background:black;
 }
+#map{
+	display:flex;
+	flex-direction:column;
+	padding-top:0px;
+	}
 /* MEDIA QUERY FOR MAP */
-@media (max-width:375px) { 
+@media (max-width:375px){ 
 	#map{
 		display:flex;
 		flex-direction:column;
@@ -76,7 +78,7 @@ a{
 .afterSubmission{
 	display:flex;
 	font-size:130%;
-	padding:20px 10px 10px 20px;
+	padding:10px 10px 10px 10px;
 }
 .changeBackground{
 	background-size:cover;

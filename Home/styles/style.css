@@ -1,8 +1,8 @@
 body{
-	background:url("../images/rsz_alexandre-tsuchiya-ynviaxodwp8-unsplash.jpg");
 	font-family:Helvetica;
 	}
 #image{
+	background:url("../images/rsz_alexandre-tsuchiya-ynviaxodwp8-unsplash.jpg");
 	max-width:100%;
 	height:auto;
 	background-size:cover;
