@@ -1,6 +1,7 @@
 //FORM VALIDATION
 const button=document.getElementById("button");
 button.addEventListener('click', submission); 
+$('#exampleModal').modal({ show: false});
 
 function submission(){
 	
@@ -35,9 +36,13 @@ function submission(){
 		
 		//setting the time out so that alert appears after the background change
 		setTimeout(() => {
-		alert("Thank you for your details "+visitorName.value+
-		", one of our team members will be in touch shortly!"); 
-		}, 200)
+			//alert("Thank you for your details "+visitorName.value+
+		//", one of our team members will be in touch shortly!"); }
+		$('#myModal').modal('show');
+		document.getElementById("pop-up").innerHTML="Thank you for your details "+visitorName.value+
+		", one of our team members will be in touch shortly!";}
+		, 200)
+		
 		return true;
 	}
 	else{
