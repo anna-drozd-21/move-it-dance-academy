@@ -475,14 +475,14 @@ footer{
 	font-weight:bold;	
 }
 .field_new{
-	background:#F0E68C;
+	filter:drop-shadow(5px 5px 6px #FFDB58);
 }
 .error_style{
 	color:red;
 	font-weight:bold;
 }
 #button{
-	background:#F0E68C;
+	background:#FFDB58;
 }
 #button:hover{
 	background:black;
@@ -491,7 +491,9 @@ footer{
 	display:flex;
 	flex-direction:column;
 	padding-top:0px;
+	
 }
+
 /* MEDIA QUERY FOR THE MAP */
 @media (max-width:375px){ 
 	#map{

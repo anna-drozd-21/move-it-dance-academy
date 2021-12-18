@@ -9,7 +9,7 @@ function saleButtonBig(b) {
 }
 //sale button link to Booking page
 function linkToBooking(){
-	window.open("Book a Class/index.html", '_blank');
+	window.open("Booking/index.html", '_blank');
 	
 } 
 
