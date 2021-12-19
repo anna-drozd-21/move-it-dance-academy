@@ -100,7 +100,10 @@ a{
     border: 5px rgb(255, 255, 255) solid;
 }
 
-img:not(*:hover){
+#column1 > img:not(*:hover),
+#column2 > img:not(*:hover),
+#column3 > img:not(*:hover),
+#column4 > img:not(*:hover){
     filter: grayscale(1);
 }
 
