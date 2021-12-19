@@ -261,7 +261,7 @@ contactSubmit.addEventListener('click', (e) => {
     userClasse ="";
     errorDisplay.innerHTML =""
     if(!contactEmail.value){
-        errorDisplay.innerHTML+= "Make sure You have entered an Emial Adress! <br>"
+        errorDisplay.innerHTML+= "Make sure You have entered an Email Adress! <br>"
     }
 
     if(!contactName.value){
