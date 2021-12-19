@@ -319,7 +319,7 @@ footer{
 /* --- */
 
 #image{
-	background:url("../Home/images/rsz_alexandre-tsuchiya-ynviaxodwp8-unsplash.jpg");
+	background:url("../home/images/rsz_alexandre-tsuchiya-ynviaxodwp8-unsplash.jpg");
 	max-width:100%;
 	height:auto;
 	background-size:cover;
@@ -348,7 +348,7 @@ footer{
 	color:white;
 	text-shadow:0px 0px 5px black;
 }
-/* QUOTATION */
+/* QUOTE */
 .quotation{
 	padding-top:30px;
 	font-family:Times New Roman;
@@ -392,7 +392,6 @@ footer{
 .header-main-text{
 	display:flex;
 	text-align:center;
-	text-shadow:5px;
 	justify-content:center;
 	color:#FFDB58;
 	text-shadow: 3px 3px 4px black;
@@ -451,7 +450,6 @@ footer{
 	display:flex;
 	flex-direction:column;
 	justify-content:center;
-	text-shadow:2px;
 	width:30%;
 	height:auto;
 	filter: drop-shadow(7px 7px 8px grey);
@@ -508,7 +506,7 @@ footer{
 	
 }
 
-/* MEDIA QUERY FOR THE MAP */
+/* MEDIA QUERY FOR THE MAP (Joanna)*/
 @media (max-width:375px){ 
 	#map{
 		display:flex;

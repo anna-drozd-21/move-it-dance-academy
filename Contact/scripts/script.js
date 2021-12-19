@@ -5,7 +5,7 @@ button.addEventListener('click', submission);
 function submission(e){
 	
 	//variables	
-	var visitorName=document.getElementById("name");
+	var visitorName=document.getElementById("exampleFormControlInput0");
 	var visitorEmail=document.getElementById("exampleFormControlInput1");
 	var visitorMessage=document.getElementById("exampleFormControlTextarea1");
 	var errorMessage1=document.getElementById("errorMessage1");
