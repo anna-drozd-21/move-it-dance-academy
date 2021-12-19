@@ -1,9 +1,8 @@
 //FORM VALIDATION
 const button=document.getElementById("button");
 button.addEventListener('click', submission); 
-$('#exampleModal').modal({ show: false});
 
-function submission(){
+function submission(e){
 	
 	//variables	
 	var visitorName=document.getElementById("name");
@@ -34,22 +33,15 @@ function submission(){
 		document.getElementById("location").style.display="none";
 		document.getElementById("walk-ins").innerHTML="Walk-ins also welcome!";
 		
-		//setting the time out so that alert appears after the background change
-		setTimeout(() => {
-			//alert("Thank you for your details "+visitorName.value+
-		//", one of our team members will be in touch shortly!"); }
-		$('#myModal').modal('show');
-		document.getElementById("pop-up").innerHTML="Thank you for your details "+visitorName.value+
-		", one of our team members will be in touch shortly!";}
-		, 200)
+		// calling helper function from another js file (Joanna)
+		alertFunc(e, "Thank you for your details "+visitorName.value+ ", one of our team members will be in touch shortly!");
 		
 		return true;
 	}
 	else{
 		return false;
 	}
-	
-    
+	  
                 
 }
 	
